@@ -1,31 +1,56 @@
 .card1, .card2, .card3 {
-    border: 2px solid black;
+    border: 1px solid black;
     width: 30%;
     height: fit-content;
     margin: 1rem;
     padding: 1rem;
     background-color: blanchedalmond;
+    align-self: center;
 }
 
-.sub {
+.sub1, .sub2, .sub3 {
     float: right;
-    margin: -1.1rem -1rem 0 0;
+    margin: -1rem -1rem 0 0;
     padding: 1rem;
     background-color: rgb(230, 161, 161);
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.sub1 {
+    background-color: rgb(233, 187, 187);
+}
+
+.sub2 {
+    background-color: rgb(230, 114, 114);
+}
+
+.sub3 {
+    background-color: rgb(236, 84, 84);
+}
+
+h1 {
+    margin: 10% 0 2vh 0;
+    text-align: center;
 }
 
 body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.cards {
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: flex-start;
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 767.5px) {
-    body {
+    .cards {
         flex-wrap: wrap;
     }
 
@@ -42,7 +67,7 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-    body {
+    .cards {
         flex-wrap: nowrap;
     }
 
